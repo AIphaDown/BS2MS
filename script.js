@@ -14,7 +14,7 @@ xhttp.onload = function() {
 xhttp.open("GET", "BeatSaberMaps/ExpertStandard.txt");
 xhttp.send();
 
-console.log(file);
+console.log(file);  
 let input = "hello world";
 console.log(input);
 let newword = input.indexOf("wor")
