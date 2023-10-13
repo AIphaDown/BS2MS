@@ -1,12 +1,18 @@
 
 const file = '';
 //gets Beatsaber file
-var client = new XMLHttpRequest();
-client.open('GET', 'BeatSaberMaps/ExpertStandard.txt');
-client.onreadystatechange = function() {
-  alert(client.responseText);
+// Create an XMLHttpRequest object
+const xhttp = new XMLHttpRequest();
+
+// Define a callback function
+xhttp.onload = function() {
+  // Here you can use the Data
+  file = this.responseText;
 }
-client.send();
+
+// Send a request
+xhttp.open("GET", "BeatSaberMaps/ExpertStandard.txt");
+xhttp.send();
 
 console.log(file);
 let input = "hello world";
