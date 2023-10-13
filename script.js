@@ -1,5 +1,5 @@
 
-const file = '';
+let file = '';
 //gets Beatsaber file
 // Create an XMLHttpRequest object
 const xhttp = new XMLHttpRequest();
@@ -8,7 +8,6 @@ const xhttp = new XMLHttpRequest();
 xhttp.onload = function() {
   // Here you can use the Data
   file = this.responseText;
-  console.log(file);
 }
 
 // Send a request
